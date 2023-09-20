@@ -33,3 +33,15 @@ search_icon_access.addEventListener('click', () => {
     }
 });
 //----------------------------->>>>>>>>>>>>>>>>>>>>>>>>>
+
+// ********* Drop down Menus ********
+
+const dropDownArrow = document.querySelectorAll('.body_parts');
+const dropDownMenus = document.querySelectorAll('.extend_section');
+
+dropDownArrow.forEach(value => {
+    value.addEventListener('click', () => {
+        dropDownMenus.classList.remove();
+        value.classList.toggle('active_extend_section');
+    })
+})

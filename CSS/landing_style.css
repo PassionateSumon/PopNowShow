@@ -174,5 +174,12 @@ body{
     background: var(--nav_body_main_dark_color_lv2);
     padding: 20px;
     max-height: 400px;
-    /* max-width: 400px; */
+}
+
+.extend_section {
+    display: none;
+}
+
+.active_extend_section {
+    display: block;
 }
