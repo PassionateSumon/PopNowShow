@@ -10,7 +10,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 1px solid red; */
     font-family: 'Outfit',sans-serif;
 }
 
@@ -51,6 +50,7 @@
     width: 15rem;
     padding-left: 0.8rem;
     border: none;
+    transition: all ease 0.5s;
 }
 #search_bar:focus {
     outline: 2px solid var(--main_body_letter_color);
