@@ -17,14 +17,14 @@
         <div class="text">
             Select you photo
         </div>
-        <input type="file" accept="image/png, image/jpeg" id="image"><br>
+        <input type="file" accept="image/png, image/jpeg" id="image" required><br>
         <div class="pic">Your photo </div>
-        <input type="text" placeholder="Enter your name" id="name">
-        <input type="text" placeholder="Enter your email" id="mail">
+        <input type="text" placeholder="Enter your name" id="name" required>
+        <input type="text" placeholder="Enter your email" id="mail" required>
         <div class="text">
             Enter you DOB
         </div>
-        <input type="date" name="Date of Birth" id="date">
+        <input type="date" name="Date of Birth" id="date" required>
         <input type="submit" value="Create Account" id="submit">
     </form>
 </body>
@@ -36,6 +36,9 @@
     const submit = document.querySelector('#submit');
     const pic = document.querySelector('.pic');
     let userName, userMail, userDob;
+    // localStorage.removeItem('userNameInDB');
+    // localStorage.removeItem('userMailInDB');
+
     //taking the image
     image.addEventListener('change', () => {
         // console.log(image);
@@ -56,11 +59,9 @@
     })
     submit.addEventListener('click', (e) => {
         e.preventDefault();
-        localStorage.setItem(
-            "userNameInDB", name.value
-            );
-            localStorage.setItem("userMailInDB", mail.value);
-            console.log(date.value)
+        localStorage.setItem("userNameInDB", name.value);
+        localStorage.setItem("userMailInDB", mail.value);
+        console.log(date.value)
     })
 </script>
 </html>
