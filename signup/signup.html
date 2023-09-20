@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PNS - Sign Up | Make you life easy</title>
+    <style>
+        body{
+            font-family: 'Outfit', sans-serif;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sign Up</h1>
+    <form>
+        <div class="text">
+            Select you photo
+        </div>
+        <input type="file" accept="image/png, image/jpeg" id="image"><br>
+        <div class="pic">Your photo </div>
+        <input type="text" placeholder="Enter your name" id="name">
+        <input type="text" placeholder="Enter your email" id="mail">
+        <div class="text">
+            Enter you DOB
+        </div>
+        <input type="date" name="Date of Birth" id="date">
+        <input type="submit" value="Create Account" id="submit">
+    </form>
+</body>
+<script>
+    const image = document.querySelector('#image');
+    const name = document.querySelector('#name');
+    const mail = document.querySelector('#mail');
+    const date = document.querySelector('#date');
+    const submit = document.querySelector('#submit');
+    const pic = document.querySelector('.pic');
+    let userName, userMail, userDob;
+    //taking the image
+    image.addEventListener('change', () => {
+        // console.log(image);
+        const userImage = image.files[0];
+        const imageUrl = URL.createObjectURL(userImage);
+        const img = document.createElement('img');
+        img.src = imageUrl;
+        img.height = 100;
+        img.width = 100;
+        pic.appendChild(img);
+        console.log(pic);
+    })
+    name.addEventListener('keypress', () => {
+        userName = name.value;
+        console.log(userName);
+    })
+    submit.addEventListener('click', (e) => {
+        e.preventDefault();
+    })
+</script>
+</html>
