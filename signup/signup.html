@@ -32,7 +32,7 @@
     const image = document.querySelector('#image');
     const name = document.querySelector('#name');
     const mail = document.querySelector('#mail');
-    const date = document.querySelector('#date');
+    const date = document.querySelector('input[type="date"]');
     const submit = document.querySelector('#submit');
     const pic = document.querySelector('.pic');
     let userName, userMail, userDob;
@@ -48,12 +48,19 @@
         pic.appendChild(img);
         console.log(pic);
     })
-    name.addEventListener('keypress', () => {
-        userName = name.value;
-        console.log(userName);
+    name.addEventListener('keyup', () => {
+        console.log(name.value);
+    })
+    mail.addEventListener('keyup', () => {
+        console.log(mail.value);
     })
     submit.addEventListener('click', (e) => {
         e.preventDefault();
+        localStorage.setItem(
+            "userNameInDB", name.value
+            );
+            localStorage.setItem("userMailInDB", mail.value);
+            console.log(date.value)
     })
 </script>
 </html>
