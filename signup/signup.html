@@ -1,67 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PNS - Sign Up | Make you life easy</title>
-    <style>
-        body{
-            font-family: 'Outfit', sans-serif;
-            font-weight: bolder;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <h1>Sign Up</h1>
     <form>
-        <div class="text">
+        <!-- <div class="text">
             Select you photo
-        </div>
-        <input type="file" accept="image/png, image/jpeg" id="image" required><br>
-        <div class="pic">Your photo </div>
+        </div> -->
+        <!-- <input type="file" accept="image/png, image/jpeg" id="image" required><br> -->
+        <!-- <div class="pic">Your photo </div> -->
+        <span>Name: </span>
         <input type="text" placeholder="Enter your name" id="name" required>
+        <span>Email: </span>
         <input type="text" placeholder="Enter your email" id="mail" required>
+        Password
+        <input type="password" name="password" id="password">
+        <div class="rule">
+            <div id="ruleno1" class="ruleInside">1) Two capital letter should include.</div>
+            <div id="ruleno2" class="ruleInside">2) must include atleast two digits.</div>
+            <div id="ruleno3" class="ruleInside">3) must include speacial characters(atleast one) (!, @, #, $, %, &, ?, _)</div>
+            <div id="ruleno4" class="ruleInside">4) At least 8 characters</div>
+        </div>
         <div class="text">
             Enter you DOB
         </div>
         <input type="date" name="Date of Birth" id="date" required>
-        <input type="submit" value="Create Account" id="submit">
+        <input type="submit" value="Create Account" id="submit" disabled>
     </form>
 </body>
-<script>
-    const image = document.querySelector('#image');
-    const name = document.querySelector('#name');
-    const mail = document.querySelector('#mail');
-    const date = document.querySelector('input[type="date"]');
-    const submit = document.querySelector('#submit');
-    const pic = document.querySelector('.pic');
-    let userName, userMail, userDob;
-    // localStorage.removeItem('userNameInDB');
-    // localStorage.removeItem('userMailInDB');
-
-    //taking the image
-    image.addEventListener('change', () => {
-        // console.log(image);
-        const userImage = image.files[0];
-        const imageUrl = URL.createObjectURL(userImage);
-        const img = document.createElement('img');
-        img.src = imageUrl;
-        img.height = 100;
-        img.width = 100;
-        pic.appendChild(img);
-        console.log(pic);
-    })
-    name.addEventListener('keyup', () => {
-        console.log(name.value);
-    })
-    mail.addEventListener('keyup', () => {
-        console.log(mail.value);
-    })
-    submit.addEventListener('click', (e) => {
-        e.preventDefault();
-        localStorage.setItem("userNameInDB", name.value);
-        localStorage.setItem("userMailInDB", mail.value);
-        console.log(date.value)
-    })
-</script>
+<script src="js/script.js"></script>
 </html>

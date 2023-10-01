@@ -19,6 +19,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Outfit', sans-serif;
+    user-select: none;
 }
 
 a{
@@ -128,6 +129,11 @@ body {
 .active_extend_section{
     height: auto;
     overflow: auto;
+    transition: 0.3s;
+}
+.active_extend_section .body_parts_upper_part .main_body_three_parts_arrow{
+    rotate: 180deg;
+    transition: 0.3s;
 }
 
 .body_parts_upper_part {
@@ -233,4 +239,7 @@ body {
     padding: 15px 30px;
     border-radius: 40px;
     color: var(--nav_right_part_letter_color);
+}
+.heading-section{
+    text-transform: capitalize;
 }
