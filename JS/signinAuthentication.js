@@ -7,5 +7,15 @@ window.addEventListener('load', () => {
         div.setAttribute('class', 'same_border right_sign_up')
         a.appendChild(div);
         div.innerHTML = `<i class="fa-regular fa-user"></i>`;
+    } else {
+        const anchorDiv = document.createElement('a');
+        const signUpNewDiv = document.createElement('div');
+        const accessNav = document.querySelector(".nav_right");
+        anchorDiv.setAttribute("href","signup/signup.html");
+        anchorDiv.appendChild(signUpNewDiv);
+        signUpNewDiv.setAttribute("class", "same_border right_sign_up");
+        signUpNewDiv.setAttribute("id", "sign_up");
+        signUpNewDiv.textContent = "Sign Up";
+        accessNav.appendChild(anchorDiv);
     }
 })
