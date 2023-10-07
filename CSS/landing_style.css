@@ -10,8 +10,8 @@
     --main_body_letter_color_lv2: #1d3a33;
     --main_body_letter_color_lv3: #0b2e26;
     --main_body_letter_color_lv4: #0e3b31;
-    --footer_text_half_transparent: rgba(255,255,255,0.3);
-    --footer_text_half_transparent_white: rgba(0,0,0,0.3);
+    --footer_text_half_transparent: rgba(255, 255, 255, 0.3);
+    --footer_text_half_transparent_white: rgba(0, 0, 0, 0.3);
 }
 
 * {
@@ -22,7 +22,7 @@
     user-select: none;
 }
 
-a{
+a {
     text-decoration: none;
     color: #fff;
 }
@@ -101,6 +101,13 @@ body {
     color: var(--main_body_letter_color);
 }
 
+.logout {
+    position: absolute;
+    z-index: 999999999999;
+    right: 0;
+    padding-top: 80px
+}
+
 /* body styling */
 
 .same_border:hover {
@@ -127,12 +134,13 @@ body {
     overflow: hidden;
 }
 
-.active_extend_section{
+.active_extend_section {
     height: auto;
     overflow: auto;
     transition: 0.3s;
 }
-.active_extend_section .body_parts_upper_part .main_body_three_parts_arrow{
+
+.active_extend_section .body_parts_upper_part .main_body_three_parts_arrow {
     rotate: 180deg;
     transition: 0.3s;
 }
@@ -209,26 +217,29 @@ body {
     border-radius: 20px;
     /* backdrop-filter: blur(10px); */
 }
-.extend_section_body{
+
+.extend_section_body {
     /* display: ; */
     align-items: center;
 }
 
 /* footer design */
-.footer-06{
+.footer-06 {
     background: radial-gradient(ellipse at center, var(--main_body_letter_color_lv2) 0%, #00000000 100%);
 }
 
-.subheading{
+.subheading {
     color: var(--footer_text_half_transparent);
     text-transform: uppercase;
     letter-spacing: 2px;
 }
-.heading-section{
+
+.heading-section {
     text-transform: uppercase;
     font-size: 30px;
 }
-.form{
+
+.form {
     padding: 3px 3px 3px 20px;
     background-color: var(--nav_right_part_letter_color);
     border-radius: 80px;
@@ -236,22 +247,27 @@ body {
     align-items: center;
     justify-content: space-between;
 }
-.form input{
+
+.form input {
     border: none;
 }
-.form input:focus{
+
+.form input:focus {
     outline: 0;
 }
-.form button{
+
+.form button {
     background: var(--main_body_letter_color_lv2);
     border: none;
     padding: 15px 30px;
     border-radius: 40px;
     color: var(--nav_right_part_letter_color);
 }
-.heading-section{
+
+.heading-section {
     text-transform: capitalize;
 }
-.fa-arrow-turn-up::before{
+
+.fa-arrow-turn-up::before {
     transform: rotateY(90deg)
 }

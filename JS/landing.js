@@ -23,7 +23,7 @@ search_icon_access.addEventListener('click', () => {
     searchBar.type = 'search'
     searchBar.placeholder = 'Enter Movie Name'
     searchBar.style.transition = '0.5s'
-    if(flag == false) {
+    if (flag == false) {
         search_bar_access.appendChild(searchBar);
         flag = true;
     } else {
@@ -42,3 +42,23 @@ dropDownArrow.forEach((value) => {
         value.classList.toggle('active_extend_section');
     })
 })
+
+setInterval(() => {
+    const nav = document.querySelector('nav');
+    const userDetails = document.querySelector('.userDetails');
+    // ******userdetails action------------>>>>>>>>>>>>>>>
+    userDetails.addEventListener('click', () => {
+        const logout = document.querySelector('.logout');
+        // console.log(logout);
+        if (logout != null) {
+            logout.innerHTML = '';
+        }
+        else {
+            const div = document.createElement('div');
+            div.setAttribute('class', 'logout');
+            div.innerHTML = 'LOG OUT'
+            nav.append(div);
+            console.log('hii');
+        }
+    })
+}, 30)
