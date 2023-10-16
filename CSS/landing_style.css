@@ -13,6 +13,19 @@
     --footer_text_half_transparent: rgba(255, 255, 255, 0.3);
     --footer_text_half_transparent_white: rgba(0, 0, 0, 0.3);
 }
+.light-theme{
+    --nav_body_main_dark_color: #ffffff;
+    --nav_body_main_dark_color_lv2: #c5c5c5;
+    --nav_body_main_dark_color_lv3: #929292;
+    --body_shadow_color: rgba(233, 233, 233, 0.39);
+    --nav_right_part_letter_color: #000000;
+    --main_body_letter_color: #35E1B6;
+    --main_body_letter_color_lv2: #1d3a33;
+    --main_body_letter_color_lv3: #0b2e26;
+    --main_body_letter_color_lv4: #0f4136;
+    --footer_text_half_transparent: rgba(0, 0, 0, 0.3);
+    --footer_text_half_transparent_white: rgba(255, 255, 255, 0.3);
+}
 
 * {
     margin: 0;
@@ -130,7 +143,7 @@ body {
     row-gap: 40px;
     background: var(--nav_body_main_dark_color);
     padding: 1.8rem 1rem;
-    /* height: 100px; */
+    height: 100px;
     overflow: hidden;
 }
 
