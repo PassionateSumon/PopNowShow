@@ -16,22 +16,22 @@ main_body_three_parts_arrow.forEach(element => {
 
 
 // search bar functionaliites
-let flag = false;
-search_icon_access.addEventListener('click', () => {
-    const searchBar = document.createElement('input')
-    searchBar.id = 'search_bar'
-    searchBar.type = 'search'
-    searchBar.placeholder = 'Enter Movie Name'
-    searchBar.style.transition = '0.5s'
-    if (flag == false) {
-        search_bar_access.appendChild(searchBar);
-        flag = true;
-    } else {
-        const s = document.querySelector('#search_bar');
-        s.remove();
-        flag = false;
-    }
-});
+// let flag = false;
+// search_icon_access.addEventListener('click', () => {
+//     const searchBar = document.createElement('input')
+//     searchBar.id = 'search_bar'
+//     searchBar.type = 'search'
+//     searchBar.placeholder = 'Enter Movie Name'
+//     searchBar.style.transition = '0.5s'
+//     if (flag == false) {
+//         search_bar_access.appendChild(searchBar);
+//         flag = true;
+//     } else {
+//         const s = document.querySelector('#search_bar');
+//         s.remove();
+//         flag = false;
+//     }
+// });
 //----------------------------->>>>>>>>>>>>>>>>>>>>>>>>>
 
 // ********* Drop down Menus ********
