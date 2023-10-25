@@ -72,3 +72,8 @@ let sunMoon = document.querySelector('.fa-sun');
 bw_mode.addEventListener('click', () => {
     sunMoon.classList.toggle('fa-moon');
 })
+
+let filterArrow = document.querySelector('.fa-angle-down');
+filter.addEventListener('click', () => {
+    filterArrow.classList.toggle('fa-angle-up');
+})
