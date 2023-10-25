@@ -227,13 +227,16 @@ body {
     background: var(--nav_body_main_dark_color_lv2);
     padding: 20px;
     max-height: 400px;
+    width: 100%;
     border-radius: 20px;
     /* backdrop-filter: blur(10px); */
 }
 
 .extend_section_body {
-    /* display: ; */
+    display: flex;
     align-items: center;
+    column-gap: 10px;
+    width: 100%;
 }
 
 /* footer design */
