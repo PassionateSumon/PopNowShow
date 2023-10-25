@@ -239,6 +239,10 @@ body {
     width: 100%;
 }
 
+.fa-arrow-turn-up {
+    transform: rotate(90deg)
+}
+
 /* footer design */
 .footer-06 {
     background: radial-gradient(ellipse at center, var(--main_body_letter_color_lv2) 0%, #00000000 100%);
@@ -282,8 +286,4 @@ body {
 
 .heading-section {
     text-transform: capitalize;
-}
-
-.fa-arrow-turn-up::before {
-    transform: rotateY(90deg)
 }
