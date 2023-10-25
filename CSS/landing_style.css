@@ -121,6 +121,19 @@ body {
     padding-top: 80px
 }
 
+/* Filter Menu styling */
+.filter_drop_down_on {
+    padding-top: 100px;
+    position: absolute;
+    right: 100px;
+    background: var(--nav_right_part_letter_color);
+    color: var(--nav_body_main_dark_color);
+}
+
+.filter_drop_down_off {
+    display: none;
+}
+
 /* body styling */
 
 .same_border:hover {

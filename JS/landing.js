@@ -62,3 +62,8 @@ setInterval(() => {
         }
     })
 }, 30)
+
+let filterMenu = document.querySelector('.filter_drop_down_off');
+filter.addEventListener('click', () => {
+    filterMenu.classList.toggle('filter_drop_down_on');
+})
