@@ -67,3 +67,8 @@ let filterMenu = document.querySelector('.filter_drop_down_off');
 filter.addEventListener('click', () => {
     filterMenu.classList.toggle('filter_drop_down_on');
 })
+
+let sunMoon = document.querySelector('.fa-sun');
+bw_mode.addEventListener('click', () => {
+    sunMoon.classList.toggle('fa-moon');
+})

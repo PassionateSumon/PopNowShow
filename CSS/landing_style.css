@@ -121,8 +121,25 @@ body {
     padding-top: 80px
 }
 
+/* .moon_off {
+    display: none;
+} */
+.moon_on {
+    visibility: visible;
+}
+/* #sun_off {
+    display: none;
+}
+#sun_off {
+    display: block;
+} */
 /* Filter Menu styling */
+.filter_drop_down_off {
+    display: none;
+}
+
 .filter_drop_down_on {
+    display: block;
     padding-top: 100px;
     position: absolute;
     right: 100px;
@@ -130,9 +147,6 @@ body {
     color: var(--nav_body_main_dark_color);
 }
 
-.filter_drop_down_off {
-    display: none;
-}
 
 /* body styling */
 
