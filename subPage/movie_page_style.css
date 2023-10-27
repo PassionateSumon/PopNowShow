@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.main_body_movie {
+    padding-top: 80px;
+}
+
+.trailer_customize {
+    height: auto;
+    width: 400px;
+}
+
+#main_parts3 {
+    position: relative;
+    width: max-content;
+}
+
+.first_pause {
+    font-size: 50px;
+    position: absolute;
+    
+}
