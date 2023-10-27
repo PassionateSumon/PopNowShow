@@ -6,6 +6,9 @@
 
 .main_body_movie {
     padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
 .trailer_customize {
@@ -25,4 +28,10 @@
     position: absolute;
     padding-top: 75px;
     padding-left: 155px;
+}
+.thumbnail{
+    height: auto;
+    width: 400px;
+    position: absolute;
+    z-index: 9;
 }
