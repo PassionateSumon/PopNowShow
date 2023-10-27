@@ -18,8 +18,9 @@
     width: max-content;
 }
 
-.first_pause {
+.first_play {
     cursor: pointer;
+    z-index: 10;
     font-size: 50px;
     position: absolute;
     padding-top: 75px;
