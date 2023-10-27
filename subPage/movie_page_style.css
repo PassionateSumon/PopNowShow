@@ -1,8 +1,8 @@
-*{
+/* *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
+} */
 
 .main_body_movie {
     padding-top: 80px;
@@ -11,14 +11,44 @@
     gap: 40px;
 }
 
+#main_parts1 h1 {
+    width: 100%;
+    font-weight: 900;
+    display: flex;
+    place-content: center;
+}
+
+#main_parts2 {
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+#details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.det_all {
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
 .trailer_customize {
     height: auto;
     width: 400px;
 }
 
 #main_parts3 {
+    padding: 20px;
     position: relative;
-    width: max-content;
+}
+
+#heading h3 {
+    font-size: 2rem;
+    font-weight: 600;
 }
 
 .first_play {
