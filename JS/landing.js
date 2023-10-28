@@ -9,7 +9,7 @@ console.log(fullBody);
 fullBody.addEventListener('click', ()=> {
     if(menuFlag === true) {
         console.log("dont click");
-        filterMenu.classList.toggle('filter_drop_down_off');
+        filterMenu.classList.remove('filter_drop_down_on');
         menuFlag = false;
     }
 })
