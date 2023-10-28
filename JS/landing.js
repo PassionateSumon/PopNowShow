@@ -3,16 +3,16 @@ const search_bar_access = document.querySelector('#search');
 const main_body_three_parts_arrow = document.querySelectorAll('.main_body_three_parts_arrow');
 let filterMenu = document.querySelector('.filter_drop_down_off');
 let menuFlag = false;
-let fullBody = document.querySelector('#bolly_parts1');
+let fullBody = document.querySelector('.main_body_container');
 console.log(fullBody);
 
-// fullBody.addEventListener('click', ()=> {
-//     if(menuFlag === true) {
-//         console.log("dont click");
-//         filterMenu.classList.toggle('filter_drop_down_off');
-//         menuFlag = false;
-//     }
-// })
+fullBody.addEventListener('click', ()=> {
+    if(menuFlag === true) {
+        console.log("dont click");
+        filterMenu.classList.toggle('filter_drop_down_off');
+        menuFlag = false;
+    }
+})
 
 
 //arrow down functionalities--------->>>>>>>>>------------------
