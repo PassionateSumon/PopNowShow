@@ -1,6 +1,19 @@
 const search_icon_access = document.querySelector('#search_icon');
 const search_bar_access = document.querySelector('#search');
 const main_body_three_parts_arrow = document.querySelectorAll('.main_body_three_parts_arrow');
+let filterMenu = document.querySelector('.filter_drop_down_off');
+let menuFlag = false;
+let fullBody = document.querySelector('#bolly_parts1');
+console.log(fullBody);
+
+// fullBody.addEventListener('click', ()=> {
+//     if(menuFlag === true) {
+//         console.log("dont click");
+//         filterMenu.classList.toggle('filter_drop_down_off');
+//         menuFlag = false;
+//     }
+// })
+
 
 //arrow down functionalities--------->>>>>>>>>------------------
 main_body_three_parts_arrow.forEach(element => {
@@ -63,10 +76,13 @@ setInterval(() => {
     })
 }, 30)
 
-let filterMenu = document.querySelector('.filter_drop_down_off');
+
 filter.addEventListener('click', () => {
     filterMenu.classList.toggle('filter_drop_down_on');
+    menuFlag = true;
 })
+
+
 
 let sunMoon = document.querySelector('.fa-sun');
 bw_mode.addEventListener('click', () => {
