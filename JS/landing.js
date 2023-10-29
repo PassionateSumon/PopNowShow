@@ -4,12 +4,13 @@ const main_body_three_parts_arrow = document.querySelectorAll('.main_body_three_
 let filterMenu = document.querySelector('.filter_drop_down_off');
 let menuFlag = false;
 let fullBody = document.querySelector('.main_body_container');
-console.log(fullBody);
+let filterArrow = document.querySelector('.fa-angle-down');
+let sunMoon = document.querySelector('.fa-sun');
 
 fullBody.addEventListener('click', () => {
     if(menuFlag === true) {
-        console.log("dont click");
         filterMenu.classList.remove('filter_drop_down_on');
+        filterArrow.classList.remove('fa-angle-up');
         menuFlag = false;
     }
 })
@@ -84,12 +85,10 @@ filter.addEventListener('click', () => {
 
 
 
-let sunMoon = document.querySelector('.fa-sun');
 bw_mode.addEventListener('click', () => {
     sunMoon.classList.toggle('fa-moon');
 })
 
-let filterArrow = document.querySelector('.fa-angle-down');
 filter.addEventListener('click', () => {
     filterArrow.classList.toggle('fa-angle-up');
 })

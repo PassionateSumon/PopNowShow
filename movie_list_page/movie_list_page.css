@@ -1,7 +1,7 @@
-.main_body{
+.main_body_container{
   padding: 100px 20px 30px 20px;
 }
-.main_body h1{
+.main_body_container h1{
   text-align: center;
 }
 .cinemas{
