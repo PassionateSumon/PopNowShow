@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PopNowShow</title>
+  <!-- For bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"
+    defer></script>
+  <!-- fontawesome kit -->
+  <script src="https://kit.fontawesome.com/bf915a8f75.js" crossorigin="anonymous"></script>
+  <!-- for favicon -->
+  <link rel="shortcut icon" href="../image/logo-removebg-preview.png" type="image/x-icon">
+  <!-- for ex css  -->
+  <link rel="stylesheet" href="../CSS/landing_style.css">
+  <link rel="stylesheet" href="movie_list_page.css">
+</head>
+
+<body>
+  <nav id="nav">
+    <div class="main_nav">
+        <div class="nav_left">
+            <div class="left_logo" id="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="38pt" height="38pt"
+                    viewBox="0 0 1300 1300" preserveAspectRatio="xMidYMid meet">
+
+                    <g transform="translate(0.000000,1300.000000) scale(0.100000,-0.100000)" fill="#35E1B6"
+                        stroke="none">
+                        <path
+                            d="M0 6500 l0 -6500 6500 0 6500 0 0 6500 0 6500 -6500 0 -6500 0 0 -6500z m3818 2955 c-2 -2 -64 -5 -138 -6 -517 -6 -916 -208 -1093 -554 -78 -153 -107 -286 -107 -497 0 -215 31 -387 110 -613 63 -183 191 -457 286 -612 26 -43 52 -87 58 -98 14 -25 168 -258 176 -265 3 -3 16 -22 30 -42 13 -20 29 -34 34 -31 5 3 6 1 2 -5 -3 -6 -1 -16 6 -24 7 -7 26 -31 42 -53 16 -22 36 -47 43 -55 7 -8 27 -33 43 -55 16 -22 34 -45 40 -52 5 -6 31 -38 57 -70 25 -32 49 -60 52 -63 3 -3 21 -23 40 -45 111 -131 182 -205 416 -440 143 -143 259 -264 257 -268 -1 -5 2 -5 8 -2 14 8 52 -24 44 -37 -3 -4 -1 -7 4 -6 5 2 54 -35 108 -82 54 -47 112 -96 128 -110 17 -14 41 -35 53 -47 13 -13 26 -23 28 -23 3 0 51 -38 108 -84 56 -46 129 -103 163 -127 141 -102 222 -167 216 -173 -3 -4 0 -5 8 -2 9 3 54 -23 105 -59 182 -130 592 -395 611 -395 2 0 38 -21 81 -46 123 -73 495 -265 643 -332 337 -152 679 -279 922 -344 40 -10 45 -14 35 -27 -10 -12 -7 -12 12 1 15 11 29 14 40 8 19 -9 68 -23 166 -44 415 -91 844 -102 1136 -27 284 73 526 237 646 439 14 23 29 40 34 36 5 -3 6 1 4 8 -3 7 5 36 18 63 33 68 57 143 73 228 l14 72 -6 -65 c-14 -161 -67 -313 -155 -440 -56 -81 -86 -113 -100 -104 -7 4 -9 3 -6 -3 16 -26 -206 -191 -239 -179 -8 3 -13 2 -10 -3 13 -20 -184 -92 -327 -120 -273 -54 -555 -54 -902 -1 -123 19 -393 74 -425 87 -8 3 -19 7 -25 8 -108 25 -309 89 -517 166 -242 90 -320 123 -311 134 5 4 3 5 -4 1 -18 -10 -369 153 -603 280 -47 25 -112 61 -145 78 -72 39 -274 161 -450 273 -11 7 -42 27 -70 44 -27 17 -104 68 -170 115 -66 46 -148 103 -182 127 -37 25 -61 47 -58 55 3 7 0 10 -5 7 -12 -7 -114 63 -233 162 -49 40 -92 71 -95 69 -4 -2 -6 -45 -5 -96 1 -78 0 -91 -13 -86 -9 3 -159 6 -335 6 l-319 0 0 386 0 385 -141 142 c-77 78 -168 172 -201 209 -33 37 -69 78 -81 91 -80 88 -240 281 -305 367 -33 44 -39 57 -29 70 10 13 10 13 -3 3 -13 -10 -28 5 -96 100 -44 62 -89 128 -100 147 -10 19 -22 37 -25 40 -8 7 -115 182 -156 255 -19 33 -67 128 -107 210 -195 402 -287 793 -256 1097 16 158 61 335 82 322 7 -4 8 -2 4 5 -8 12 52 140 77 166 7 7 26 30 42 51 172 220 468 359 836 394 62 6 114 12 115 13 1 1 68 1 149 -1 81 -2 145 -5 143 -7z m-38 -232 l75 -78 -77 75 c-43 41 -78 76 -78 77 0 8 11 -3 80 -74z m1710 -157 c0 -2 -8 -10 -17 -17 -16 -13 -17 -12 -4 4 13 16 21 21 21 13z m-210 -1444 c195 -59 275 -104 412 -231 32 -29 55 -58 52 -62 -3 -5 0 -9 5 -9 11 0 124 -166 127 -187 1 -7 14 -43 28 -80 51 -135 60 -195 60 -388 0 -163 -2 -189 -26 -276 -28 -104 -95 -259 -111 -259 -6 0 -7 -3 -4 -6 9 -10 -33 -65 -44 -59 -5 4 -6 0 -4 -7 8 -21 -125 -159 -206 -213 -75 -50 -243 -125 -282 -125 -11 0 -44 19 -71 42 -28 24 -62 52 -75 63 -68 56 -260 224 -292 255 -20 19 -75 70 -122 113 -48 44 -87 83 -87 88 0 5 96 9 222 9 204 0 225 2 265 21 59 28 111 84 142 149 34 74 36 87 36 220 0 112 -5 160 -15 170 -3 3 -14 24 -24 48 -22 50 -88 114 -143 138 -33 15 -75 18 -312 18 l-273 0 1 -334 1 -335 -78 80 c-83 86 -162 175 -238 270 -27 33 -54 65 -60 70 -6 6 -24 28 -40 50 -16 22 -33 45 -39 52 -5 6 -23 30 -39 52 -17 23 -33 41 -38 41 -4 0 -8 5 -8 11 0 5 -24 43 -52 83 -83 113 -78 92 -78 336 l0 221 668 -3 c658 -4 668 -4 742 -26z m1399 -260 c186 -182 292 -293 287 -300 -4 -7 -2 -10 6 -7 13 5 138 -114 534 -506 105 -104 196 -189 203 -189 8 0 11 172 11 645 l0 645 340 0 340 0 0 -1325 0 -1325 -117 0 -117 0 -155 153 c-281 276 -633 621 -826 811 -104 102 -226 222 -270 266 -44 44 -84 80 -88 80 -12 0 -8 -105 6 -119 10 -11 10 -13 0 -7 -10 6 -13 -114 -13 -583 l0 -591 -262 0 -261 0 -84 47 -83 46 -2 896 c-2 493 -2 1066 0 1274 l2 377 128 0 127 0 294 -288z m3095 272 c116 -18 286 -73 366 -117 163 -91 275 -207 353 -365 21 -43 54 -181 62 -260 l6 -62 -308 2 -308 3 -6 35 c-12 75 -62 135 -139 168 -60 25 -172 46 -213 38 -17 -3 -55 -7 -83 -10 -104 -10 -220 -83 -255 -161 -23 -49 -24 -133 -3 -177 46 -96 163 -132 564 -179 52 -6 137 -20 188 -31 52 -11 96 -17 100 -14 3 3 14 -1 24 -11 17 -15 17 -17 1 -37 -18 -21 -17 -21 7 0 27 23 28 23 110 -9 209 -81 346 -252 386 -482 3 -16 6 -82 6 -145 1 -140 -17 -223 -73 -337 -47 -95 -156 -215 -259 -285 -140 -95 -348 -164 -571 -188 -167 -18 -402 10 -573 69 -136 48 -304 155 -379 242 -21 24 -47 54 -58 66 -32 37 -95 173 -112 243 -9 36 -18 97 -19 135 l-3 70 307 3 307 3 7 -28 c17 -78 55 -123 146 -172 127 -68 415 -68 534 1 70 41 86 55 109 103 18 39 21 54 14 93 -5 25 -16 56 -24 69 -37 55 -167 121 -220 110 -14 -2 -22 0 -19 4 3 5 -6 10 -20 10 -14 1 -29 2 -33 3 -5 1 -48 5 -98 10 -137 11 -313 35 -380 52 -407 104 -595 339 -595 743 0 132 22 231 75 336 57 116 119 192 210 260 22 17 42 32 45 35 15 15 70 40 82 37 7 -2 10 -2 5 0 -4 3 -4 9 -1 14 3 6 11 5 20 -2 12 -10 13 -9 9 4 -12 30 211 97 400 120 77 10 217 6 309 -9z m-6294 -599 c-107 -107 -197 -195 -200 -195 -3 0 83 88 190 195 107 107 197 195 200 195 3 0 -83 -88 -190 -195z m-620 -4209 c0 -2 -8 -10 -17 -17 -16 -13 -17 -12 -4 4 13 16 21 21 21 13z m7360 0 c0 -2 -8 -10 -17 -17 -16 -13 -17 -12 -4 4 13 16 21 21 21 13z" />
+                        <path d="M4790 5080 c0 -5 5 -10 11 -10 5 0 7 5 4 10 -3 6 -8 10 -11 10 -2 0 -4 -4 -4 -10z" />
+                        <path d="M5205 4730 c3 -5 8 -10 11 -10 2 0 4 5 4 10 0 6 -5 10 -11 10 -5 0 -7 -4 -4 -10z" />
+                        <path d="M5450 7536 c0 -2 8 -10 18 -17 15 -13 16 -12 3 4 -13 16 -21 21 -21 13z" />
+                        <path
+                            d="M5550 7435 c13 -14 26 -25 28 -25 3 0 -5 11 -18 25 -13 14 -26 25 -28 25 -3 0 5 -11 18 -25z" />
+                        <path
+                            d="M5619 7367 c6 -8 7 -18 3 -23 -4 -5 -3 -6 2 -2 5 4 16 2 25 -4 9 -7 5 0 -8 15 -25 27 -43 39 -22 14z" />
+                        <path
+                            d="M5699 7287 c6 -8 7 -18 3 -23 -4 -5 -3 -6 2 -2 5 4 16 2 25 -4 9 -7 5 0 -8 15 -25 27 -43 39 -22 14z" />
+                        <path
+                            d="M6179 6807 c6 -8 7 -18 3 -23 -4 -5 -3 -6 2 -2 5 4 16 2 25 -4 9 -7 5 0 -8 15 -25 27 -43 39 -22 14z" />
+                        <path
+                            d="M6259 6727 c6 -8 7 -18 3 -23 -4 -5 -3 -6 2 -2 5 4 16 2 25 -4 9 -7 5 0 -8 15 -25 27 -43 39 -22 14z" />
+                        <path
+                            d="M6339 6647 c6 -8 7 -18 3 -23 -4 -5 -3 -6 2 -2 5 4 16 2 25 -4 9 -7 5 0 -8 15 -25 27 -43 39 -22 14z" />
+                        <path
+                            d="M6419 6567 c6 -8 7 -18 3 -23 -4 -5 -3 -6 2 -2 5 4 16 2 25 -4 9 -7 5 0 -8 15 -25 27 -43 39 -22 14z" />
+                        <path
+                            d="M6579 6407 c6 -8 7 -18 3 -23 -4 -5 -3 -6 2 -2 5 4 16 2 25 -4 9 -7 5 0 -8 15 -25 27 -43 39 -22 14z" />
+                        <path
+                            d="M6659 6327 c6 -8 7 -18 3 -23 -4 -5 -3 -6 2 -2 5 4 16 2 25 -4 9 -7 5 0 -8 15 -25 27 -43 39 -22 14z" />
+                        <path
+                            d="M6739 6247 c6 -8 7 -18 3 -23 -4 -5 -3 -6 2 -2 5 4 16 2 25 -4 9 -7 5 0 -8 15 -25 27 -43 39 -22 14z" />
+                        <path d="M9598 6553 c7 -3 16 -2 19 1 4 3 -2 6 -13 5 -11 0 -14 -3 -6 -6z" />
+                        <path
+                            d="M10170 6407 c0 -2 6 -10 14 -16 11 -9 16 -9 22 1 4 7 4 10 -1 6 -4 -4 -14 -3 -22 3 -7 6 -13 9 -13 6z" />
+                        <path
+                            d="M9303 5623 c4 -3 1 -13 -6 -22 -11 -14 -10 -14 5 -2 16 12 16 31 1 31 -4 0 -3 -3 0 -7z" />
+                    </g>
+                </svg>
+            </div>
+            <div class="left_name" id="name">
+                PopNowShow
+            </div>
+        </div>
+
+        <div class="nav_right">
+            <div class="right_search" id="search">
+                <!-- <input type="search" name="Search" id="search_bar" placeholder="Enter Movie Name"> -->
+                <a href="./searching/search.html">
+                    <i class="fa-solid fa-magnifying-glass" id="search_icon"></i>
+                </a>
+            </div>
+            <div class="same_border right_bw_mode" id="bw_mode">
+                <i class="fa-solid fa-sun" id="sun"></i>
+            </div>
+            <div class="same_border right_home" id="home">
+                <a href="#">Home</a>
+            </div>
+            <div class="same_border right_filter" id="filter">
+                Filter
+                <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <!-- <a href="signup/signup.html">
+                <div class="same_border right_sign_up" id="sign_up">
+                    Sign In
+                    <i class="fa-regular fa-user"></i>
+                </div>
+            </a> -->
+        </div>
+    </div>
+</nav>
+
+
+<div class="main_body">
+  <h1>Trending - Flow with Trend</h1>
+  <div class="cinemas">
+    <div class="cinema">
+      <img src="https://southindiamovies.in/wp-content/uploads/2022/10/Jawan-movie.jpeg">
+      <div class="name">
+        Jawan
+      </div>
+    </div>
+    <div class="cinema">
+      <img src="https://southindiamovies.in/wp-content/uploads/2022/10/Jawan-movie.jpeg">
+      <div class="name">
+        Jawan
+      </div>
+    </div>
+    <div class="cinema">
+      <img src="https://southindiamovies.in/wp-content/uploads/2022/10/Jawan-movie.jpeg">
+      <div class="name">
+        Jawan
+      </div>
+    </div>
+    <div class="cinema">
+      <img src="https://southindiamovies.in/wp-content/uploads/2022/10/Jawan-movie.jpeg">
+      <div class="name">
+        Jawan
+      </div>
+    </div>
+    <div class="cinema">
+      <img src="https://southindiamovies.in/wp-content/uploads/2022/10/Jawan-movie.jpeg">
+      <div class="name">
+        Jawan
+      </div>
+    </div>
+    <div class="cinema">
+      <img src="https://southindiamovies.in/wp-content/uploads/2022/10/Jawan-movie.jpeg">
+      <div class="name">
+        Jawan
+      </div>
+    </div>
+    <div class="cinema">
+      <img src="https://southindiamovies.in/wp-content/uploads/2022/10/Jawan-movie.jpeg">
+      <div class="name">
+        Jawan
+      </div>
+    </div>
+    <div class="cinema">
+      <img src="https://southindiamovies.in/wp-content/uploads/2022/10/Jawan-movie.jpeg">
+      <div class="name">
+        Jawan
+      </div>
+    </div>
+    <div class="cinema">
+      <img src="https://southindiamovies.in/wp-content/uploads/2022/10/Jawan-movie.jpeg">
+      <div class="name">
+        Jawan
+      </div>
+    </div>
+    <div class="cinema">
+      <img src="https://southindiamovies.in/wp-content/uploads/2022/10/Jawan-movie.jpeg">
+      <div class="name">
+        Jawan
+      </div>
+    </div>
+    <div class="cinema">
+      <img src="https://southindiamovies.in/wp-content/uploads/2022/10/Jawan-movie.jpeg">
+      <div class="name">
+        Jawan
+      </div>
+    </div>
+    <div class="cinema">
+      <img src="https://southindiamovies.in/wp-content/uploads/2022/10/Jawan-movie.jpeg">
+      <div class="name">
+        Jawan
+      </div>
+    </div>
+    <div class="cinema">
+      <img src="https://southindiamovies.in/wp-content/uploads/2022/10/Jawan-movie.jpeg">
+      <div class="name">
+        Jawan
+      </div>
+    </div>
+    <div class="cinema">
+      <img src="https://southindiamovies.in/wp-content/uploads/2022/10/Jawan-movie.jpeg">
+      <div class="name">
+        Jawan
+      </div>
+    </div>
+    <div class="cinema">
+      <img src="https://southindiamovies.in/wp-content/uploads/2022/10/Jawan-movie.jpeg">
+      <div class="name">
+        Jawan
+      </div>
+    </div>
+    <div class="cinema">
+      <img src="https://southindiamovies.in/wp-content/uploads/2022/10/Jawan-movie.jpeg">
+      <div class="name">
+        Jawan
+      </div>
+    </div>
+    <div class="cinema">
+      <img src="https://southindiamovies.in/wp-content/uploads/2022/10/Jawan-movie.jpeg">
+      <div class="name">
+        Jawan
+      </div>
+    </div>
+
+    <div class="cinema">
+      <img src="https://southindiamovies.in/wp-content/uploads/2022/10/Jawan-movie.jpeg">
+      <div class="name">
+        Jawan
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<footer class="footer-06">
+  <div class="container">
+      <div class="row align-items-center align-items-stretch mb-5">
+          <div class="col-md-4 py-4 py-md-5 aside-stretch d-flex align-items-center">
+              <div class="w-100">
+                  <span class="subheading">Subscribe to our</span>
+                  <h3 class="heading-section">PopNowShow</h3>
+              </div>
+          </div>
+          <div class="col-md-8 py-4 py-md-5 d-flex align-items-center pl-md-5 aside-stretch-right">
+              <form action="#" class="subscribe-form w-100">
+                  <div class="form d-flex">
+                      <input type="text" class="form-input" placeholder="Enter email address">
+                      <button type="submit" class="form-submit"><span>Submit</span></button>
+                  </div>
+              </form>
+          </div>
+      </div>
+      <div class="row pt-4">
+          <div class="col-md-3 col-lg-6 order-md-last">
+              <div class="row justify-content-end">
+                  <div class="col-md-12 col-lg-9 text-md-right mb-md-0 mb-4">
+                      <h2 class="footer-heading"><a href="#nav" class="logo">PopNowShow</a></h2>
+                      <p class="copyright">
+                          Copyright ©
+                          <script>document.write(new Date().getFullYear());</script> All rights reserved |
+                          This page is made by <a href="https://passionatesumon.github.io/PopNowShow/"
+                              target="_blank">PopNowShow</a>
+                      </p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-9 col-lg-6">
+              <div class="row">
+                  <div class="col-md-4 mb-md-0 mb-4">
+                      <h2 class="footer-heading">Home</h2>
+                      <ul class="list-unstyled">
+                          <li><a href="#" class="py-1 d-block"><span
+                                      class="ion-ios-checkmark-circle-outline mr-2"></span>Our Company</a></li>
+                          <li><a href="#" class="py-1 d-block"><span
+                                      class="ion-ios-checkmark-circle-outline mr-2"></span>Data</a></li>
+                          <li><a href="#" class="py-1 d-block"><span
+                                      class="ion-ios-checkmark-circle-outline mr-2"></span>Pricing</a></li>
+                          <li><a href="#" class="py-1 d-block"><span
+                                      class="ion-ios-checkmark-circle-outline mr-2"></span>Contact Us</a></li>
+                          <li><a href="#" class="py-1 d-block"><span
+                                      class="ion-ios-checkmark-circle-outline mr-2"></span>Support</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-md-4 mb-md-0 mb-4">
+                      <h2 class="footer-heading">Movies</h2>
+                      <ul class="list-unstyled">
+                          <li><a href="#" class="py-1 d-block"><span
+                                      class="ion-ios-checkmark-circle-outline mr-2"></span>Download</a></li>
+                          <li><a href="#" class="py-1 d-block"><span
+                                      class="ion-ios-checkmark-circle-outline mr-2"></span>Bike Provider</a></li>
+                          <li><a href="#" class="py-1 d-block"><span
+                                      class="ion-ios-checkmark-circle-outline mr-2"></span>How to Used</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-md-4 mb-md-0 mb-4">
+                      <h2 class="footer-heading">API</h2>
+                      <ul class="list-unstyled">
+                          <li><a href="#" class="py-1 d-block"><span
+                                      class="ion-ios-checkmark-circle-outline mr-2"></span>Documentation</a></li>
+                          <li><a href="#" class="py-1 d-block"><span
+                                      class="ion-ios-checkmark-circle-outline mr-2"></span>Credential</a></li>
+                          <li><a href="#" class="py-1 d-block"><span
+                                      class="ion-ios-checkmark-circle-outline mr-2"></span>Developer info</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</footer>
+</body>
+<script src="https://kit.fontawesome.com/bf915a8f75.js" crossorigin="anonymous"></script>
+<script src="../JS/signinAuthentication.js"></script>
+<script src="../JS/landing.js"></script>
+<script src="../JS/darktheme.js"></script>
+</html>

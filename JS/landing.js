@@ -6,7 +6,7 @@ let menuFlag = false;
 let fullBody = document.querySelector('.main_body_container');
 console.log(fullBody);
 
-fullBody.addEventListener('click', ()=> {
+fullBody.addEventListener('click', () => {
     if(menuFlag === true) {
         console.log("dont click");
         filterMenu.classList.remove('filter_drop_down_on');
