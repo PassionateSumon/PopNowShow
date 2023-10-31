@@ -212,6 +212,7 @@ body {
     background-color: var(--nav_body_main_dark_color_lv3);
     padding: 20px;
     /* filter: blur(10px); */
+    border-radius: 35px;
 }
 
 .main_body_three_parts_text {
@@ -267,6 +268,10 @@ body {
     width: 100%;
     border-radius: 20px;
     /* backdrop-filter: blur(10px); */
+}
+
+.sub_section_card p {
+    margin: 0;
 }
 
 .extend_section_body {

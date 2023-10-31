@@ -24,6 +24,8 @@
   border-radius: 10px;
 }
 .name{
+  font-size: 1.3rem;
+  font-weight: 600;
   background-color: antiquewhite;
   color: black;
   padding: 20px;
@@ -35,6 +37,19 @@
   transition: 0.5s linear;
   opacity: 0;
   /* display: none; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.name input {
+  border: none;
+  background-color: black;
+  border-radius: 30px;
+  padding: 5px 10px;
+  color: wheat;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 .cinema:hover .name{
   transform: translateY(-100%);
