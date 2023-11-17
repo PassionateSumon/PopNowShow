@@ -1,419 +1,545 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PopNowShow</title>
     <!-- For bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"
-        defer></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+      defer
+    ></script>
     <!-- fontawesome kit -->
-    <script src="https://kit.fontawesome.com/bf915a8f75.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/bf915a8f75.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- for favicon -->
-    <link rel="shortcut icon" href="image/logo-removebg-preview.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="image/logo-removebg-preview.png"
+      type="image/x-icon"
+    />
     <!-- for ex css  -->
-    <link rel="stylesheet" href="CSS/landing_style.css">
-</head>
+    <link rel="stylesheet" href="CSS/landing_style.css" />
+  </head>
 
-<body>
+  <body>
     <!-- Nav bar -->
     <nav id="nav">
-        <div class="main_nav">
-            <div class="nav_left">
-                <div class="left_logo" id="logo">
-                    <img src="/image/pns-final.png" alt="" srcset="" width="70">
-                </div>
-                <div class="left_name" id="name">
-                    PopNowShow
-                </div>
-            </div>
-
-            <div class="nav_right">
-                <div class="right_search" id="search">
-                    <!-- <input type="search" name="Search" id="search_bar" placeholder="Enter Movie Name"> -->
-                    <a href="./searching/search.html">
-                        <i class="fa-solid fa-magnifying-glass" id="search_icon"></i>
-                    </a>
-                </div>
-                <div class="same_border right_bw_mode" id="bw_mode">
-                    <i class="fa-solid fa-sun" id="sun"></i>
-                </div>
-                <div class="same_border right_home" id="home">
-                    <a href="#">Home</a>
-                </div>
-                <div class="same_border right_filter" id="filter">
-                    Filter
-                    <i class="fa-solid fa-angle-down"></i>
-                </div>
-                <a href="signup/signup.html">
-                    <div class="same_border right_sign_up" id="sign_up">
-                        Sign In
-                        <!-- <i class="fa-regular fa-user"></i> -->
-                    </div>
-                </a>
-            </div>
+      <div class="main_nav">
+        <div class="nav_left">
+          <div class="left_logo" id="logo">
+            <img src="/image/pns-logo.png" alt="" srcset="" width="70" />
+          </div>
+          <div class="left_name" id="name">PopNowShow</div>
         </div>
+
+        <div class="nav_right">
+          <div class="right_search" id="search">
+            <!-- <input type="search" name="Search" id="search_bar" placeholder="Enter Movie Name"> -->
+            <a href="./searching/search.html">
+              <i class="fa-solid fa-magnifying-glass" id="search_icon"></i>
+            </a>
+          </div>
+          <div class="same_border right_bw_mode" id="bw_mode">
+            <i class="fa-solid fa-sun" id="sun"></i>
+          </div>
+          <div class="same_border right_home" id="home">
+            <a href="#">Home</a>
+          </div>
+          <div class="same_border right_filter" id="filter">
+            Filter
+            <i class="fa-solid fa-angle-down"></i>
+          </div>
+          <a href="signup/signup.html">
+            <div class="same_border right_sign_up" id="sign_up">
+              Sign In
+              <!-- <i class="fa-regular fa-user"></i> -->
+            </div>
+          </a>
+        </div>
+      </div>
     </nav>
 
     <!-- Nav Filter Click Dropdown Menu -->
     <div class="filter_drop_down_off">
-        <div class="filter_menus" id="menu1">
-            Trending - Flow with Trend
-        </div>
-        <div class="filter_menus" id="menu2">
-            Comedy - Haste Raho
-        </div>
-        <div class="filter_menus" id="menu3">
-            RomCom - Romance with Comedy
-        </div>
-        <div class="filter_menus" id="menu4">
-            Action - Full on Action
-        </div>
-        <div class="filter_menus" id="menu5">
-            Mystery - Suspance
-        </div>
+      <div class="filter_menus" id="menu1">Trending - Flow with Trend</div>
+      <div class="filter_menus" id="menu2">Comedy - Haste Raho</div>
+      <div class="filter_menus" id="menu3">RomCom - Romance with Comedy</div>
+      <div class="filter_menus" id="menu4">Action - Full on Action</div>
+      <div class="filter_menus" id="menu5">Mystery - Suspance</div>
     </div>
 
     <!-- Body -->
 
     <div class="main_body_container">
-        <div class="body_parts" id="bolly">
-            <div class="body_parts_upper_part">
-                <div class="main_body_three_parts main_body_three_parts_text" id="bolly_parts1">
-                    BollyWood
-                </div>
+      <div class="body_parts" id="bolly">
+        <div class="body_parts_upper_part">
+          <div
+            class="main_body_three_parts main_body_three_parts_text"
+            id="bolly_parts1"
+          >
+            BollyWood
+          </div>
 
-                <div class="main_body_three_parts main_body_three_parts_images" id="bolly_parts2">
-                    <div class="img1"></div>
-                    <div class="img1"></div>
-                    <div class="img1"></div>
-                    <div class="img1"></div>
-                    <div class="img1"></div>
-                </div>
+          <div
+            class="main_body_three_parts main_body_three_parts_images"
+            id="bolly_parts2"
+          >
+            <div class="img1"></div>
+            <div class="img1"></div>
+            <div class="img1"></div>
+            <div class="img1"></div>
+            <div class="img1"></div>
+          </div>
 
-                <div class="main_body_three_parts main_body_three_parts_arrow" id="bolly_parts3">
-                    <i class="fa-solid fa-angle-down"></i>
-                </div>
-            </div>
-
-            <div class="body_parts_lower_part extend_section">
-                <a href="/movie_list_page/movie_list_page.html" target="_blank">
-                    <div class="extend_section_body">
-                        <div class="arrow"><i class="fa-solid fa-arrow-turn-up"></i></div>
-                        <div class="sub_section_card bolly_sub_sections" id="trending_bolly">
-                            <p>
-                                Trending - Flow with Trend
-                            </p>
-                        </div>
-                    </div>
-                </a>
-                <div class="extend_section_body">
-                    <div class="arrow"><i class="fa-solid fa-arrow-turn-up"></i></div>
-                    <div class="sub_section_card bolly_sub_sections" id="comedy_bolly">
-                        <p>Comedy - Haste Raho</p>
-                    </div>
-                </div>
-                <div class="extend_section_body">
-                    <div class="arrow"><i class="fa-solid fa-arrow-turn-up"></i></div>
-                    <div class="sub_section_card bolly_sub_sections" id="rom-com_bolly">
-                        <p>
-                            RomCom - Romance with Comedy
-                        </p>
-                    </div>
-                </div>
-                <div class="extend_section_body">
-                    <div class="arrow"><i class="fa-solid fa-arrow-turn-up"></i></div>
-                    <div class="sub_section_card bolly_sub_sections" id="action_bolly">
-                        <p>
-                            Action - Full on Action
-                        </p>
-                    </div>
-                </div>
-                <div class="extend_section_body">
-                    <div class="arrow"><i class="fa-solid fa-arrow-turn-up"></i></div>
-                    <div class="sub_section_card bolly_sub_sections" id="mystery_bolly">
-                        <p>
-                            Mystery - Suspance
-                        </p>
-                    </div>
-                </div>
-            </div>
+          <div
+            class="main_body_three_parts main_body_three_parts_arrow"
+            id="bolly_parts3"
+          >
+            <i class="fa-solid fa-angle-down"></i>
+          </div>
         </div>
 
-
-        <!-- =========== bolly end ========= -->
-
-
-        <div class="body_parts" id="holly">
-            <div class="body_parts_upper_part">
-                <div class="main_body_three_parts main_body_three_parts_text" id="holly_parts1">
-                    HollyWood
-                </div>
-
-                <div class="main_body_three_parts main_body_three_parts_images" id="holly_parts2">
-                    <div class="img1"></div>
-                    <div class="img1"></div>
-                    <div class="img1"></div>
-                    <div class="img1"></div>
-                    <div class="img1"></div>
-                </div>
-
-                <div class="main_body_three_parts main_body_three_parts_arrow" id="holly_parts3">
-                    <i class="fa-solid fa-angle-down"></i>
-                </div>
+        <div class="body_parts_lower_part extend_section">
+          <a href="/movie_list_page/movie_list_page.html" target="_blank">
+            <div class="extend_section_body">
+              <div class="arrow"><i class="fa-solid fa-arrow-turn-up"></i></div>
+              <div
+                class="sub_section_card bolly_sub_sections"
+                id="trending_bolly"
+              >
+                <p>Trending - Flow with Trend</p>
+              </div>
             </div>
-
-            <div class="body_parts_lower_part extend_section">
-                <!-- hollywood sub-sections -->
-                <div class="extend_section_body">
-                    <div class="arrow"><i class="fa-solid fa-arrow-turn-up"></i></div>
-                    <div class="sub_section_card holly_sub_sections" id="trending_holly">
-                        <p>Trending - Flow with Trend</p>
-                    </div>
-                </div>
-
-                <div class="extend_section_body">
-                    <div class="arrow"><i class="fa-solid fa-arrow-turn-up"></i></div>
-                    <div class="sub_section_card holly_sub_sections" id="comedy_holly">
-                        <p>Comedy - Haste Raho</p>
-                    </div>
-                </div>
-
-                <div class="extend_section_body">
-                    <div class="arrow"><i class="fa-solid fa-arrow-turn-up"></i></div>
-                    <div class="sub_section_card holly_sub_sections" id="rom-com_holly">
-                        <p>RomCom - Romance with Comedy</p>
-                    </div>
-                </div>
-
-                <div class="extend_section_body">
-                    <div class="arrow"><i class="fa-solid fa-arrow-turn-up"></i></div>
-                    <div class="sub_section_card holly_sub_sections" id="action_holly">
-                        <p>Action - Full on Action</p>
-                    </div>
-                </div>
-
-                <div class="extend_section_body">
-                    <div class="arrow"><i class="fa-solid fa-arrow-turn-up"></i></div>
-                    <div class="sub_section_card holly_sub_sections" id="mystery_holly">
-                        <p>Mystery - Suspance</p>
-                    </div>
-                </div>
-
+          </a>
+          <div class="extend_section_body">
+            <div class="arrow"><i class="fa-solid fa-arrow-turn-up"></i></div>
+            <div class="sub_section_card bolly_sub_sections" id="comedy_bolly">
+              <p>Comedy - Haste Raho</p>
             </div>
+          </div>
+          <div class="extend_section_body">
+            <div class="arrow"><i class="fa-solid fa-arrow-turn-up"></i></div>
+            <div class="sub_section_card bolly_sub_sections" id="rom-com_bolly">
+              <p>RomCom - Romance with Comedy</p>
+            </div>
+          </div>
+          <div class="extend_section_body">
+            <div class="arrow"><i class="fa-solid fa-arrow-turn-up"></i></div>
+            <div class="sub_section_card bolly_sub_sections" id="action_bolly">
+              <p>Action - Full on Action</p>
+            </div>
+          </div>
+          <div class="extend_section_body">
+            <div class="arrow"><i class="fa-solid fa-arrow-turn-up"></i></div>
+            <div class="sub_section_card bolly_sub_sections" id="mystery_bolly">
+              <p>Mystery - Suspance</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- =========== bolly end ========= -->
+
+      <div class="body_parts" id="holly">
+        <div class="body_parts_upper_part">
+          <div
+            class="main_body_three_parts main_body_three_parts_text"
+            id="holly_parts1"
+          >
+            HollyWood
+          </div>
+
+          <div
+            class="main_body_three_parts main_body_three_parts_images"
+            id="holly_parts2"
+          >
+            <div class="img1"></div>
+            <div class="img1"></div>
+            <div class="img1"></div>
+            <div class="img1"></div>
+            <div class="img1"></div>
+          </div>
+
+          <div
+            class="main_body_three_parts main_body_three_parts_arrow"
+            id="holly_parts3"
+          >
+            <i class="fa-solid fa-angle-down"></i>
+          </div>
         </div>
 
-
-        <!-- =========== holly end ========= -->
-
-
-        <div class="body_parts" id="tolly">
-            <div class="body_parts_upper_part">
-                <div class="main_body_three_parts main_body_three_parts_text" id="tolly_parts1">
-                    TollyWood
-                </div>
-
-                <div class="main_body_three_parts main_body_three_parts_images" id="tolly_parts2">
-                    <div class="img1"></div>
-                    <div class="img1"></div>
-                    <div class="img1"></div>
-                    <div class="img1"></div>
-                    <div class="img1"></div>
-                </div>
-
-                <div class="main_body_three_parts main_body_three_parts_arrow" id="tolly_parts3">
-                    <i class="fa-solid fa-angle-down"></i>
-                </div>
+        <div class="body_parts_lower_part extend_section">
+          <!-- hollywood sub-sections -->
+          <div class="extend_section_body">
+            <div class="arrow"><i class="fa-solid fa-arrow-turn-up"></i></div>
+            <div
+              class="sub_section_card holly_sub_sections"
+              id="trending_holly"
+            >
+              <p>Trending - Flow with Trend</p>
             </div>
+          </div>
 
-            <div class="body_parts_lower_part extend_section">
-                <!-- tollywood sub-sections -->
-                <div class="extend_section_body">
-
-                    <div class="arrow"><i class="fa-solid fa-arrow-turn-up"></i></div>
-                    <div class="sub_section_card tolly_sub_sections" id="trending_tolly">
-                        <p>Trending - Flow with Trend</p>
-                    </div>
-                </div>
-                <div class="extend_section_body">
-
-                    <div class="arrow"><i class="fa-solid fa-arrow-turn-up"></i></div>
-                    <div class="sub_section_card tolly_sub_sections" id="comedy_tolly">
-                        <p>Comedy - Haste Raho</p>
-                    </div>
-                </div>
-                <div class="extend_section_body">
-
-                    <div class="arrow"><i class="fa-solid fa-arrow-turn-up"></i></div>
-                    <div class="sub_section_card tolly_sub_sections" id="rom-com_tolly">
-                        <p>RomCom - Romance with Comedy</p>
-                    </div>
-                </div>
-                <div class="extend_section_body">
-
-                    <div class="arrow"><i class="fa-solid fa-arrow-turn-up"></i></div>
-                    <div class="sub_section_card tolly_sub_sections" id="action_tolly">
-                        <p>Action - Full on Action</p>
-                    </div>
-                </div>
-                <div class="extend_section_body">
-
-                    <div class="arrow"><i class="fa-solid fa-arrow-turn-up"></i></div>
-                    <div class="sub_section_card tolly_sub_sections" id="mystery_tolly">
-                        <p>Mystery - Suspance</p>
-                    </div>
-                </div>
+          <div class="extend_section_body">
+            <div class="arrow"><i class="fa-solid fa-arrow-turn-up"></i></div>
+            <div class="sub_section_card holly_sub_sections" id="comedy_holly">
+              <p>Comedy - Haste Raho</p>
             </div>
+          </div>
+
+          <div class="extend_section_body">
+            <div class="arrow"><i class="fa-solid fa-arrow-turn-up"></i></div>
+            <div class="sub_section_card holly_sub_sections" id="rom-com_holly">
+              <p>RomCom - Romance with Comedy</p>
+            </div>
+          </div>
+
+          <div class="extend_section_body">
+            <div class="arrow"><i class="fa-solid fa-arrow-turn-up"></i></div>
+            <div class="sub_section_card holly_sub_sections" id="action_holly">
+              <p>Action - Full on Action</p>
+            </div>
+          </div>
+
+          <div class="extend_section_body">
+            <div class="arrow"><i class="fa-solid fa-arrow-turn-up"></i></div>
+            <div class="sub_section_card holly_sub_sections" id="mystery_holly">
+              <p>Mystery - Suspance</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- =========== holly end ========= -->
+
+      <div class="body_parts" id="tolly">
+        <div class="body_parts_upper_part">
+          <div
+            class="main_body_three_parts main_body_three_parts_text"
+            id="tolly_parts1"
+          >
+            TollyWood
+          </div>
+
+          <div
+            class="main_body_three_parts main_body_three_parts_images"
+            id="tolly_parts2"
+          >
+            <div class="img1"></div>
+            <div class="img1"></div>
+            <div class="img1"></div>
+            <div class="img1"></div>
+            <div class="img1"></div>
+          </div>
+
+          <div
+            class="main_body_three_parts main_body_three_parts_arrow"
+            id="tolly_parts3"
+          >
+            <i class="fa-solid fa-angle-down"></i>
+          </div>
         </div>
 
-
-        <!-- =========== tolly end ========= -->
-
-
-        <div class="body_parts" id="webseries">
-            <div class="body_parts_upper_part">
-                <div class="main_body_three_parts main_body_three_parts_text" id="webseries_parts1">
-                    WebSeries
-                </div>
-
-                <div class="main_body_three_parts main_body_three_parts_images" id="webseries_parts2">
-                    <div class="img1"></div>
-                    <div class="img1"></div>
-                    <div class="img1"></div>
-                    <div class="img1"></div>
-                    <div class="img1"></div>
-                </div>
-
-                <div class="main_body_three_parts main_body_three_parts_arrow" id="webseries_parts3">
-                    <i class="fa-solid fa-angle-down"></i>
-                </div>
+        <div class="body_parts_lower_part extend_section">
+          <!-- tollywood sub-sections -->
+          <div class="extend_section_body">
+            <div class="arrow"><i class="fa-solid fa-arrow-turn-up"></i></div>
+            <div
+              class="sub_section_card tolly_sub_sections"
+              id="trending_tolly"
+            >
+              <p>Trending - Flow with Trend</p>
             </div>
-
-            <div class="body_parts_lower_part extend_section">
-                <!-- webseries sub-sections -->
-                <div class="extend_section_body">
-                    <div class="arrow"><i class="fa-solid fa-arrow-turn-up"></i></div>
-                    <div class="sub_section_card webseries_sub_sections" id="trending_webseries">
-                        <p>Trending - Flow with Trend</p>
-                    </div>
-                </div>
-                <div class="extend_section_body">
-                    <div class="arrow"><i class="fa-solid fa-arrow-turn-up"></i></div>
-                    <div class="sub_section_card webseries_sub_sections" id="comedy_webseries">
-                        <p>Comedy - Haste Raho</p>
-                    </div>
-                </div>
-                <div class="extend_section_body">
-                    <div class="arrow"><i class="fa-solid fa-arrow-turn-up"></i></div>
-                    <div class="sub_section_card webseries_sub_sections" id="rom-com_webseries">
-                        <p>RomCom - Romance with Comedy</p>
-                    </div>
-                </div>
-                <div class="extend_section_body">
-                    <div class="arrow"><i class="fa-solid fa-arrow-turn-up"></i></div>
-                    <div class="sub_section_card webseries_sub_sections" id="action_webseries">
-                        <p>Action - Full on Action</p>
-                    </div>
-                </div>
-                <div class="extend_section_body">
-                    <div class="arrow"><i class="fa-solid fa-arrow-turn-up"></i></div>
-                    <div class="sub_section_card webseries_sub_sections" id="mystery_webseries">
-                        <p>Mystery - Suspance</p>
-                    </div>
-                </div>
+          </div>
+          <div class="extend_section_body">
+            <div class="arrow"><i class="fa-solid fa-arrow-turn-up"></i></div>
+            <div class="sub_section_card tolly_sub_sections" id="comedy_tolly">
+              <p>Comedy - Haste Raho</p>
             </div>
+          </div>
+          <div class="extend_section_body">
+            <div class="arrow"><i class="fa-solid fa-arrow-turn-up"></i></div>
+            <div class="sub_section_card tolly_sub_sections" id="rom-com_tolly">
+              <p>RomCom - Romance with Comedy</p>
+            </div>
+          </div>
+          <div class="extend_section_body">
+            <div class="arrow"><i class="fa-solid fa-arrow-turn-up"></i></div>
+            <div class="sub_section_card tolly_sub_sections" id="action_tolly">
+              <p>Action - Full on Action</p>
+            </div>
+          </div>
+          <div class="extend_section_body">
+            <div class="arrow"><i class="fa-solid fa-arrow-turn-up"></i></div>
+            <div class="sub_section_card tolly_sub_sections" id="mystery_tolly">
+              <p>Mystery - Suspance</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- =========== tolly end ========= -->
+
+      <div class="body_parts" id="webseries">
+        <div class="body_parts_upper_part">
+          <div
+            class="main_body_three_parts main_body_three_parts_text"
+            id="webseries_parts1"
+          >
+            WebSeries
+          </div>
+
+          <div
+            class="main_body_three_parts main_body_three_parts_images"
+            id="webseries_parts2"
+          >
+            <div class="img1"></div>
+            <div class="img1"></div>
+            <div class="img1"></div>
+            <div class="img1"></div>
+            <div class="img1"></div>
+          </div>
+
+          <div
+            class="main_body_three_parts main_body_three_parts_arrow"
+            id="webseries_parts3"
+          >
+            <i class="fa-solid fa-angle-down"></i>
+          </div>
         </div>
 
+        <div class="body_parts_lower_part extend_section">
+          <!-- webseries sub-sections -->
+          <div class="extend_section_body">
+            <div class="arrow"><i class="fa-solid fa-arrow-turn-up"></i></div>
+            <div
+              class="sub_section_card webseries_sub_sections"
+              id="trending_webseries"
+            >
+              <p>Trending - Flow with Trend</p>
+            </div>
+          </div>
+          <div class="extend_section_body">
+            <div class="arrow"><i class="fa-solid fa-arrow-turn-up"></i></div>
+            <div
+              class="sub_section_card webseries_sub_sections"
+              id="comedy_webseries"
+            >
+              <p>Comedy - Haste Raho</p>
+            </div>
+          </div>
+          <div class="extend_section_body">
+            <div class="arrow"><i class="fa-solid fa-arrow-turn-up"></i></div>
+            <div
+              class="sub_section_card webseries_sub_sections"
+              id="rom-com_webseries"
+            >
+              <p>RomCom - Romance with Comedy</p>
+            </div>
+          </div>
+          <div class="extend_section_body">
+            <div class="arrow"><i class="fa-solid fa-arrow-turn-up"></i></div>
+            <div
+              class="sub_section_card webseries_sub_sections"
+              id="action_webseries"
+            >
+              <p>Action - Full on Action</p>
+            </div>
+          </div>
+          <div class="extend_section_body">
+            <div class="arrow"><i class="fa-solid fa-arrow-turn-up"></i></div>
+            <div
+              class="sub_section_card webseries_sub_sections"
+              id="mystery_webseries"
+            >
+              <p>Mystery - Suspance</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-        <!-- =========== webseries end ========= -->
+      <!-- =========== webseries end ========= -->
     </div>
 
     <!-- Footer -->
 
     <footer class="footer-06">
-        <div class="container">
-            <div class="row align-items-center align-items-stretch mb-5">
-                <div class="col-md-4 py-4 py-md-5 aside-stretch d-flex align-items-center">
-                    <div class="w-100">
-                        <span class="subheading">Subscribe to our</span>
-                        <h3 class="heading-section">PopNowShow</h3>
-                    </div>
-                </div>
-                <div class="col-md-8 py-4 py-md-5 d-flex align-items-center pl-md-5 aside-stretch-right">
-                    <form action="#" class="subscribe-form w-100">
-                        <div class="form d-flex">
-                            <input type="text" class="form-input" placeholder="Enter email address">
-                            <button type="submit" class="form-submit"><span>Submit</span></button>
-                        </div>
-                    </form>
-                </div>
+      <div class="container">
+        <div class="row align-items-center align-items-stretch mb-5">
+          <div
+            class="col-md-4 py-4 py-md-5 aside-stretch d-flex align-items-center"
+          >
+            <div class="w-100">
+              <span class="subheading">Subscribe to our</span>
+              <h3 class="heading-section">PopNowShow</h3>
             </div>
-            <div class="row pt-4">
-                <div class="col-md-3 col-lg-6 order-md-last">
-                    <div class="row justify-content-end">
-                        <div class="col-md-12 col-lg-9 text-md-right mb-md-0 mb-4">
-                            <h2 class="footer-heading"><a href="#nav" class="logo">PopNowShow</a></h2>
-                            <p class="copyright">
-                                Copyright ©
-                                <script>document.write(new Date().getFullYear());</script> All rights reserved |
-                                This page is made by <a href="https://passionatesumon.github.io/PopNowShow/"
-                                    target="_blank">PopNowShow</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-9 col-lg-6">
-                    <div class="row">
-                        <div class="col-md-4 mb-md-0 mb-4">
-                            <h2 class="footer-heading">Home</h2>
-                            <ul class="list-unstyled">
-                                <li><a href="#" class="py-1 d-block"><span
-                                            class="ion-ios-checkmark-circle-outline mr-2"></span>Our Company</a></li>
-                                <li><a href="#" class="py-1 d-block"><span
-                                            class="ion-ios-checkmark-circle-outline mr-2"></span>Data</a></li>
-                                <li><a href="#" class="py-1 d-block"><span
-                                            class="ion-ios-checkmark-circle-outline mr-2"></span>Pricing</a></li>
-                                <li><a href="#" class="py-1 d-block"><span
-                                            class="ion-ios-checkmark-circle-outline mr-2"></span>Contact Us</a></li>
-                                <li><a href="#" class="py-1 d-block"><span
-                                            class="ion-ios-checkmark-circle-outline mr-2"></span>Support</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-4 mb-md-0 mb-4">
-                            <h2 class="footer-heading">Movies</h2>
-                            <ul class="list-unstyled">
-                                <li><a href="#" class="py-1 d-block"><span
-                                            class="ion-ios-checkmark-circle-outline mr-2"></span>Download</a></li>
-                                <li><a href="#" class="py-1 d-block"><span
-                                            class="ion-ios-checkmark-circle-outline mr-2"></span>Bike Provider</a></li>
-                                <li><a href="#" class="py-1 d-block"><span
-                                            class="ion-ios-checkmark-circle-outline mr-2"></span>How to Used</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-4 mb-md-0 mb-4">
-                            <h2 class="footer-heading">API</h2>
-                            <ul class="list-unstyled">
-                                <li><a href="#" class="py-1 d-block"><span
-                                            class="ion-ios-checkmark-circle-outline mr-2"></span>Documentation</a></li>
-                                <li><a href="#" class="py-1 d-block"><span
-                                            class="ion-ios-checkmark-circle-outline mr-2"></span>Credential</a></li>
-                                <li><a href="#" class="py-1 d-block"><span
-                                            class="ion-ios-checkmark-circle-outline mr-2"></span>Developer info</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
+          <div
+            class="col-md-8 py-4 py-md-5 d-flex align-items-center pl-md-5 aside-stretch-right"
+          >
+            <form action="#" class="subscribe-form w-100">
+              <div class="form d-flex">
+                <input
+                  type="text"
+                  class="form-input"
+                  placeholder="Enter email address"
+                />
+                <button type="submit" class="form-submit">
+                  <span>Submit</span>
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
+        <div class="row pt-4">
+          <div class="col-md-3 col-lg-6 order-md-last">
+            <div class="row justify-content-end">
+              <div class="col-md-12 col-lg-9 text-md-right mb-md-0 mb-4">
+                <h2 class="footer-heading">
+                  <a href="#nav" class="logo">PopNowShow</a>
+                </h2>
+                <p class="copyright">
+                  Copyright ©
+                  <script>
+                    document.write(new Date().getFullYear());
+                  </script>
+                  All rights reserved | This page is made by
+                  <a
+                    href="https://passionatesumon.github.io/PopNowShow/"
+                    target="_blank"
+                    >PopNowShow</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-9 col-lg-6">
+            <div class="row">
+              <div class="col-md-4 mb-md-0 mb-4">
+                <h2 class="footer-heading">Home</h2>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="#" class="py-1 d-block"
+                      ><span
+                        class="ion-ios-checkmark-circle-outline mr-2"
+                      ></span
+                      >Our Company</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="py-1 d-block"
+                      ><span
+                        class="ion-ios-checkmark-circle-outline mr-2"
+                      ></span
+                      >Data</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="py-1 d-block"
+                      ><span
+                        class="ion-ios-checkmark-circle-outline mr-2"
+                      ></span
+                      >Pricing</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="py-1 d-block"
+                      ><span
+                        class="ion-ios-checkmark-circle-outline mr-2"
+                      ></span
+                      >Contact Us</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="py-1 d-block"
+                      ><span
+                        class="ion-ios-checkmark-circle-outline mr-2"
+                      ></span
+                      >Support</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-4 mb-md-0 mb-4">
+                <h2 class="footer-heading">Movies</h2>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="#" class="py-1 d-block"
+                      ><span
+                        class="ion-ios-checkmark-circle-outline mr-2"
+                      ></span
+                      >Download</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="py-1 d-block"
+                      ><span
+                        class="ion-ios-checkmark-circle-outline mr-2"
+                      ></span
+                      >Bike Provider</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="py-1 d-block"
+                      ><span
+                        class="ion-ios-checkmark-circle-outline mr-2"
+                      ></span
+                      >How to Used</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-4 mb-md-0 mb-4">
+                <h2 class="footer-heading">API</h2>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="#" class="py-1 d-block"
+                      ><span
+                        class="ion-ios-checkmark-circle-outline mr-2"
+                      ></span
+                      >Documentation</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="py-1 d-block"
+                      ><span
+                        class="ion-ios-checkmark-circle-outline mr-2"
+                      ></span
+                      >Credential</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="py-1 d-block"
+                      ><span
+                        class="ion-ios-checkmark-circle-outline mr-2"
+                      ></span
+                      >Developer info</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
-</body>
-<script src="https://kit.fontawesome.com/bf915a8f75.js" crossorigin="anonymous"></script>
-<!-- <script src="JS/signinAuthentication.js"></script> -->
-<script src="JS/landing.js"></script>
-<script src="JS/darktheme.js"></script>
-
+  </body>
+  <script
+    src="https://kit.fontawesome.com/bf915a8f75.js"
+    crossorigin="anonymous"
+  ></script>
+  <!-- <script src="JS/signinAuthentication.js"></script> -->
+  <script src="JS/landing.js"></script>
+  <script src="JS/darktheme.js"></script>
 </html>
